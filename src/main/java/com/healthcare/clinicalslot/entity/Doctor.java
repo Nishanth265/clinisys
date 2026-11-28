@@ -1,9 +1,15 @@
 package com.healthcare.clinicalslot.entity;
 import jakarta.persistence.*;
+import lombok.*;
 
 
 @Entity
 @Table(name = "doctor")
+@Builder
+@Data
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Doctor {
 
     @Id

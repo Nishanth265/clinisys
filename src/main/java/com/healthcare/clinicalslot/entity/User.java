@@ -2,9 +2,17 @@ package com.healthcare.clinicalslot.entity;
 
 import com.healthcare.clinicalslot.enums.UserRole;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="users")
+@Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
   @Id
